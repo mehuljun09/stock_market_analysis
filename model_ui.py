@@ -134,7 +134,7 @@ else:
     nifty_features_scaled = nifty_feature_scaler.fit_transform(nifty_features)
     nifty_target_scaled = nifty_target_scaler.fit_transform(nifty_target)
     model = load_model(model_path)
-    nifty_model = load_model('nifty_model.keras')
+    nifty_model = load_model('/workspaces/stock_market_analysis/nifty_model.h5')
     
     initial_data = merged_data.copy()
     initial_nifty_data = merged_data.copy()
